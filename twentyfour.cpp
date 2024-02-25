@@ -48,8 +48,8 @@ double ttf(double a, double b, double c, double d, char idur[]) {
 			double an2=clc(k,an1,c);
 			for(int l=1;l<=4;l++){
 				double an3 = clc(l,an2,d);
-				if(an3 == 24) {
-					cout << "--[(" << a << disOp(j) << b << ')' << disOp(k) << c << ']' << disOp(l) << d << '=' << an3 << endl;
+				if(an3>=23.99&&an3<=24.01) {
+					cout << ":[(" << a << disOp(j) << b << ')' << disOp(k) << c << ']' << disOp(l) << d << '=' << an3 << endl;
 				}else if(strcmp(idur,"y")==0){
 					cout << "[(" << a << disOp(j) << b << ')' << disOp(k) << c << ']' << disOp(l) << d << '=' << an3 << endl;
 				}
@@ -63,8 +63,8 @@ double ttf(double a, double b, double c, double d, char idur[]) {
 			double bn2=clc(k,a,bn1);
 			for(int l=1;l<=4;l++){
 				double bn3 = clc(l,bn2,d);
-				if(bn3 == 24) {
-					cout << "--[" << a << disOp(k) << '(' << b << disOp(j) << c << ")]" << disOp(l) << d << '=' << bn3 << endl;
+				if(bn3>=23.99&&bn3<=24.01) {
+					cout << ":[" << a << disOp(k) << '(' << b << disOp(j) << c << ")]" << disOp(l) << d << '=' << bn3 << endl;
 				}else if(strcmp(idur,"y")==0){
 					cout << "[" << a << disOp(k) << '(' << b << disOp(j) << c << ")]" << disOp(l) << d << '=' << bn3 << endl;
 				}
@@ -78,8 +78,8 @@ double ttf(double a, double b, double c, double d, char idur[]) {
 			double cn2=clc(k,cn1,d);
 			for(int l=1;l<=4;l++){
 				double cn3 = clc(l,a,cn2);
-				if(cn3 == 24) {
-					cout << "--" << a << disOp(l) << "[(" << b << disOp(j) << c << ')' << disOp(k) << d << "]=" << cn3 << endl;
+				if(cn3>=23.99&&cn3<=24.01) {
+					cout << ":" << a << disOp(l) << "[(" << b << disOp(j) << c << ')' << disOp(k) << d << "]=" << cn3 << endl;
 				}else if(strcmp(idur,"y")==0){
 					cout << a << disOp(l) << "[(" << b << disOp(j) << c << ')' << disOp(k) << d << "]=" << cn3 << endl;
 				}
@@ -93,8 +93,8 @@ double ttf(double a, double b, double c, double d, char idur[]) {
 			double dn2=clc(k,b,dn1);
 			for(int l=1;l<=4;l++){
 				double dn3 = clc(l,a,dn2);
-				if(dn3 == 24) {
-					cout << "--" << a << disOp(l) << '[' << b << disOp(k) << '(' << c << disOp(j) << d << ")]=" << dn3 << endl;
+				if(dn3>=23.99&&dn3<=24.01) {
+					cout << ":" << a << disOp(l) << '[' << b << disOp(k) << '(' << c << disOp(j) << d << ")]=" << dn3 << endl;
 				}else if(strcmp(idur,"y")==0){
 					cout << a << disOp(l) << '[' << b << disOp(k) << '(' << c << disOp(j) << d << ")]=" << dn3 << endl;
 				}
